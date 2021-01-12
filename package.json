@@ -36,7 +36,22 @@
     "prettier": "^1.19.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "ts-jest": "^26.4.4",
     "typescript": "~3.9.3",
+    "vue-jest": "^3.0.7",
     "vue-template-compiler": "^2.6.11"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testURL": "http://localhost/"
   }
 }
